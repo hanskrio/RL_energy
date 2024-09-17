@@ -1,10 +1,3 @@
-'''
-Created on Jun 4, 2020
-
-@author: Javier Arroyo
-
-'''
-
 import matplotlib.pyplot as plt
 import random
 import gymnasium as gym
