@@ -26,34 +26,24 @@ python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 pip install -r requirements.txt
 
-3. Pull and Run the BOPTEST Docker Image
+3. Set Up BOPTEST
 
-Download and run the BOPTEST test case Docker container:
-docker pull annex42/boptest-bestest-hydronic
-docker run -d -p 5000:5000 annex42/boptest-bestest-hydronic
+Follow the official instructions to set up BOPTEST:
+https://github.com/ibpsa/project1-boptest
 
-Ensure the container is running by checking Docker’s container list:
-docker ps
+4. Set Up boptestgym
 
-4. Verify BOPTEST Connection
+Follow the instructions for setting up `boptestgym`:
+https://github.com/ibpsa/project1-boptest-gym
 
-Confirm that the BOPTEST environment is accessible:
-curl http://localhost:5000
-You should see a JSON response with BOPTEST API information.
-
-5. Install boptestgym
-
-From the project directory, install the boptestgym package:
-pip install -e .
-
-6. Configure Simulation Parameters
+5. Configure Simulation Parameters
 
 Edit the configuration file in `config/boptest_config.yaml` to match your simulation settings, such as:
 - Test case (e.g., `bestest_hydronic_heat_pump`)
 - Simulation duration and start time
 - Reward function parameters
 
-7. Run Your First Simulation
+6. Run Your First Simulation
 
 Execute a test script to ensure everything is set up correctly:
 python scripts/test_boptestgym.py
