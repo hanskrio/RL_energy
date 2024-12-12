@@ -10,7 +10,7 @@ Ensure you have the following installed on your system:
 - **Docker** (for running BOPTEST test cases)
 - **pip** (Python package manager)
 - **git** (to clone the repository)
-- A **Unix-based system** (Linux/MacOS recommended; Windows with WSL may also work)
+- A **Unix-based system** (Linux/MacOS recommended; Windows with WSL may also work but no guarantees!)
 
 ### Installation Steps
 
