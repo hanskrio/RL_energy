@@ -1,5 +1,4 @@
-# RL_energy
-Deep reinforcement learning for optimizing heat pumps.
+# Deep reinforcement learning for optimizing heat pumps.
 
 ## Setup Instructions for `boptestgym`
 
@@ -15,9 +14,10 @@ Ensure you have the following installed on your system:
 
 ### Installation Steps
 
-#### 1. Clone the Repository
-```bash
+1. Clone the Repository
+
 git clone https://github.com/your-username/RL_energy.git
+cd RL_energy
 
 2. Install Required Python Packages
 
@@ -48,17 +48,17 @@ pip install -e .
 
 6. Configure Simulation Parameters
 
-Edit the configuration file in config/boptest_config.yaml to match your simulation settings, such as:
-	•	Test case (e.g., bestest_hydronic_heat_pump)
-	•	Simulation duration and start time
-	•	Reward function parameters
+Edit the configuration file in `config/boptest_config.yaml` to match your simulation settings, such as:
+- Test case (e.g., `bestest_hydronic_heat_pump`)
+- Simulation duration and start time
+- Reward function parameters
 
- 7. Run Your First Simulation
+7. Run Your First Simulation
 
 Execute a test script to ensure everything is set up correctly:
 python scripts/test_boptestgym.py
 
 Troubleshooting
-	•	Docker connection issues: Ensure Docker is running, and the container is active.
-	•	Port conflicts: Check if port 5000 is already in use. Modify the -p option in the docker run command if necessary (e.g., -p 5001:5000).
-	•	Dependency errors: Ensure all packages in requirements.txt are installed without errors.
+- Docker connection issues: Ensure Docker is running, and the container is active.
+- Port conflicts: Check if port 5000 is already in use. Modify the `-p` option in the `docker run` command if necessary (e.g., `-p 5001:5000`).
+- Dependency errors: Ensure all packages in `requirements.txt` are installed without errors.
