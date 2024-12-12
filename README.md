@@ -1,21 +1,23 @@
-# Setup Instructions for boptestgym
+# RL_energy
+Deep reinforcement learning for optimizing heat pumps.
 
-The boptestgym environment is used to simulate heat pump optimization scenarios for reinforcement learning tasks. Follow these steps to set up the environment:
+## Setup Instructions for `boptestgym`
 
-Prerequisites
+The `boptestgym` environment is used to simulate heat pump optimization scenarios for reinforcement learning tasks. Follow these steps to set up the environment:
 
+### Prerequisites
 Ensure you have the following installed on your system:
-	•	Python (version 3.8 or higher)
-	•	Docker (for running BOPTEST test cases)
-	•	pip (Python package manager)
-	•	git (to clone the repository)
-	•	A Unix-based system (Linux/MacOS recommended; Windows with WSL may also work)
+- **Python** (version 3.8 or higher)
+- **Docker** (for running BOPTEST test cases)
+- **pip** (Python package manager)
+- **git** (to clone the repository)
+- A **Unix-based system** (Linux/MacOS recommended; Windows with WSL may also work)
 
-Installation Steps
+### Installation Steps
 
-1. Clone the Repository
+#### 1. Clone the Repository
+```bash
 git clone https://github.com/your-username/RL_energy.git
-cd RL_energy
 
 2. Install Required Python Packages
 
