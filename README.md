@@ -21,10 +21,10 @@ cd RL_energy
 
 2. Install Required Python Packages
 
-Set up a virtual environment (recommended) and install dependencies:
+- Set up a virtual environment (recommended) and install dependencies:
 python -m venv venv
 source venv/bin/activate
-# On Windows, use `venv\Scripts\activate`
+- On Windows, use `venv\Scripts\activate`
 
 3. Set Up BOPTEST
 
