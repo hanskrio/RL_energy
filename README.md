@@ -1,6 +1,6 @@
-# Deep reinforcement learning for optimizing heat pumps.
+# Deep reinforcement learning for controlling heat pumps.
 
-## Setup Instructions for `boptestgym`
+## Setup Instructions for the project.
 
 The `boptestgym` environment is used to simulate heat pump optimization scenarios for reinforcement learning tasks. Follow these steps to set up the environment:
 
@@ -33,13 +33,15 @@ https://github.com/ibpsa/project1-boptest
 
 4. Set Up boptestgym
 
-Follow the instructions for setting up `boptestgym`:
+## Quick-Start (running BOPTEST locally)
+You need to set up BOPTEST locally if you plan to do any meaningful work. The BOPTEST-Service code provided in https://github.com/ibpsa/project1-boptest-gym is fun to play with, but be aware that the parameters of the DQN model from Stablebaslines 3 is not set to parameters that is not supported by the literature. For example the batch size is too small and the buffer is too low (batch_size=24, buffer_size=365*24). Also the simulation runs for just 24 hours (ie. one day). 
+
+1. Create a conda environment from the environment.yml file provided (instructions [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file)).
+2. Run a BOPTEST case with the building emulator model to be controlled (instructions [here](https://github.com/ibpsa/project1-boptest/blob/master/README.md)).
+3. Set up a like url = 'http://127.0.0.1:5000' from your machine to the BOPTEST server.
+
+### Or, follow the instructions for setting up `boptestgym`from:
 https://github.com/ibpsa/project1-boptest-gym
-
-5. Configure Simulation Parameters
-
-Edit the configuration file in `config/boptest_config.yaml` to match your simulation settings, such as:
-- Test case (e.g., `bestest_hydronic_heat_pump`)
 
 6. Run Your First Simulation
 
