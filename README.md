@@ -23,8 +23,8 @@ cd RL_energy
 
 Set up a virtual environment (recommended) and install dependencies:
 python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-pip install -r requirements.txt
+source venv/bin/activate
+# On Windows, use `venv\Scripts\activate`
 
 3. Set Up BOPTEST
 
@@ -40,8 +40,6 @@ https://github.com/ibpsa/project1-boptest-gym
 
 Edit the configuration file in `config/boptest_config.yaml` to match your simulation settings, such as:
 - Test case (e.g., `bestest_hydronic_heat_pump`)
-- Simulation duration and start time
-- Reward function parameters
 
 6. Run Your First Simulation
 
